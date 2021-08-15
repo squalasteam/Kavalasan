@@ -1,0 +1,58 @@
+    .container-fluid,
+button#button-search, 
+        button.login, 
+   input[type="text"] 
+                   {
+    background: linear-gradient(
+                45deg, #2308b9a6, #20d2caba);
+}
+.heading {
+    font-family: 'Inconsolata', monospace;
+	      color: #fff;
+}
+.erorr{
+     background: #ffbc00;
+      font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+         margin: 0px -21px;
+}
+
+.sed {
+    color: #698fd4;
+}
+
+label.text {
+      font-size: 21px;
+          color: #698fd4;
+    font-weight: bolder;
+	      width: 100px;
+     text-align: end;
+}
+
+
+input[type="text"],
+input[type="text"]::placeholder, 
+button.login,.search {
+         border: none;
+        outline: none;
+      font-size: 20px;
+    font-family: monospace;
+    font-weight: 500;
+          color: #fff;
+}
+input.form-control {
+    color: white;
+}
+.search:focus,
+#button-search:focus {
+    box-shadow:none;
+}
+
+#invalid {
+    visibility: hidden;
+}
+#data {
+    visibility: hidden;
+}
+
+
