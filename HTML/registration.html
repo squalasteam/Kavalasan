@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="..../CSS/registoration.css" rel="stylesheet">
+  <script src="./js/registoration.js"></script>
+     
+    <title>SQUALAS</title>
+  </head>
+
+  <body>
+  
+    <div class="container-fluid bg-color px-3 d-flex justify-content-center ">
+	    <div class="container pb-5 px-3 mx-md-3 ">
+		   <div class="row text-center ">  
+		     <!------appliction form-------------------->
+		   
+		        <div class="col-12 py-3 heading">
+		           <h1 >Employee Login System</h1> 
+		        </div>
+		        <div class="col-1">
+		        </div>				
+				<div class="col-lg-5 col-sm-12 col-md-12 bg-white py-3 mx-lg-3 mb-2">
+				    <h3 class="erorr my-4 py-2" id="erorr">Enter Your datailes</h3>
+				    <div class="py-5 mt-5">  
+                        <form> 
+						  <!------name lable-------------------->
+					            <div class="name mb-4 "> 
+				                       <label class="mx-2 text">Name</label>
+						                <span> <input type="text" placeholder="enter your name"id="name" class="user sm-form-control" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"></span>
+                                </div>
+							 <!------age lable-------------------->	
+					            <div class="age mb-4" id="age1"> 
+						         
+				                       <label class="mx-2 text">Age</label>
+									    
+						                <span> <input type="text" placeholder="enter your age"id="age" class="age sm-form-control" onkeypress="return onlyNumberKey(event)"></span>
+                                </div>
+							 <!------gender lable-------------------->		
+					            <div class="gender mb-4" id="gender1"> 
+						           
+				                       <label class="mx-2 text">Gender</label>
+									   
+						                <span> <input type="text" placeholder="enter your gender"id="gender" class="gender sm-form-control" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"></span>
+						         </div>
+								 <!------profession lable-------------------->		
+
+					            <div class="profession mb-4" id="profession1"> 
+						           
+				                       <label class="mx-2 text">Profession</label>
+									  
+						                <span> <input type="text" placeholder="enter your profession"id="profession" class="profession sm-form-control" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"></span>										
+					       		</div>	
+                             </form>
+							<!------button div--------------------> 
+						       <div class= "log">		
+				                  <button class="login  py-2 px-5" onclick="login()">Login</button>
+						        </div>
+                      </div>
+                      </div>
+					    <!------data output-------------------->
+                     <div class="col-lg-5 col-sm-12 bg-white py-3 mx-lg-3 mb-2" id="data" >
+				    <h3 class="erorr my-4 py-2 ">Success</h3>
+		              <div class="px-3">
+					    <!------Employee output-------------------->
+					  <h5 class="sed mb-4" id="search">Employee Data</h5>
+						
+						</div>
+						<table class="table table-bordered border border-3 border-primary">
+						  <tbody>
+							<tr>
+							  <td>ID</td>
+							  <td id="id"></td>
+							</tr>
+							<tr>
+							   <td>name</td>
+							  <td id="op_name"></td>
+							  
+							</tr>
+							<tr>
+							  <td>Age</td>
+							  <td id="op_age"></td>
+							</tr>
+							<tr>
+							  <td>Gender</td>
+							  <td id="op_gender"></td>
+							</tr>
+							<tr>
+							  <td>Profession</td>
+							  <td id="op_profession"></td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>	
+		        <div class="col-1">
+		        </div>										  
+		    </div>
+		</div> 
+    </div>	
+  </body>
+</html>
